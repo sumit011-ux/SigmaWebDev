@@ -1,0 +1,68 @@
+<!-- create a website which shows videos of different category and audios of different category.
+you can use youtube videos in an iframe using youtube embedding  features.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Gallery</title>
+  <style>
+    body { font-family: Arial; margin: 0; background: #f4f4f4; }
+    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+    nav { background: #555; padding: 0.5em; text-align: center; }
+    nav a { color: white; margin: 0 1em; text-decoration: none; }
+    .section { padding: 2em; }
+    .media-container { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; }
+    iframe, audio { border: none; max-width: 100%; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Media Showcase</h1>
+</header>
+
+<nav>
+  <a href="#music">🎶 Music</a>
+  <a href="#podcasts">🎙️ Podcasts</a>
+  <a href="#tutorials">🎓 Tutorials</a>
+  <a href="#funny">😂 Funny Videos</a>
+</nav>
+
+<div class="section" id="music">
+  <h2>Music</h2>
+  <div class="media-container">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+    <audio controls src="audio/music1.mp3"></audio>
+  </div>
+</div>
+
+<div class="section" id="podcasts">
+  <h2>Podcasts</h2>
+  <div class="media-container">
+    <audio controls src="audio/podcast1.mp3"></audio>
+    <audio controls src="audio/podcast2.mp3"></audio>
+  </div>
+</div>
+
+<div class="section" id="tutorials">
+  <h2>Tutorials</h2>
+  <div class="media-container">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="section" id="funny">
+  <h2>Funny Videos</h2>
+  <div class="media-container">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Media Gallery</p>
+</footer>
+
+</body>
+</html>
